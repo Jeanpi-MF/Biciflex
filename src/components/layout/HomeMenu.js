@@ -2,7 +2,7 @@
 import SectionHeaders from "@/components/layout/SectionHeaders";
 import MenuItem from "@/components/menu/MenuItem";
 import Image from "next/image";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 
 export default function HomeMenu() {
   const [bestSellers, setBestSellers] = useState([]);
@@ -13,25 +13,39 @@ export default function HomeMenu() {
       });
     });
   }, []);
+
   return (
     <section className="">
       <div className="absolute left-0 right-0 w-full justify-start">
         <div className="absolute left-0 -top-[70px] text-left -z-10">
-          <Image src={'/sallad1.png'} width={109} height={189}  alt={'sallad'} />
+         
         </div>
         <div className="absolute -top-[100px] right-0 -z-10">
-          <Image src={'/sallad2.png'} width={107} height={195} alt={'sallad'} />
+         
         </div>
       </div>
-      <div className="text-center mb-4">
+      <div className="text-center mt-8 mb-4">
         <SectionHeaders
           subHeader={'check out'}
-          mainHeader={'Our Best Sellers'} />
+          mainHeader={'Our Bicycle Collection'}
+        />
       </div>
       <div className="grid sm:grid-cols-3 gap-4">
-        {bestSellers?.length > 0 && bestSellers.map(item => (
-          <MenuItem key={item._id} {...item} />
-        ))}
+        <div className="border rounded-lg p-4 flex flex-col items-center">
+          <Image src={'/bmx.jpg'} width={150} height={150} alt={'Bike 1'} className="mb-4" />
+          <h3 className="text-xl font-semibold mb-2">Bicicleta BMX</h3>
+          <button className="bg-red-500 text-white py-2 px-4 rounded-full">Buy</button>
+        </div>
+        <div className="border rounded-lg p-4 flex flex-col items-center">
+          <Image src={'/montañera.jpg'} width={150} height={150} alt={'Bike 2'} className="mb-4" />
+          <h3 className="text-xl font-semibold mb-2">Bicicleta Montañera</h3>
+          <button className="bg-red-500 text-white py-2 px-4 rounded-full">Buy</button>
+        </div>
+        <div className="border rounded-lg p-4 flex flex-col items-center">
+          <Image src={'/bmx1.jpg'} width={150} height={150} alt={'Bike 3'} className="mb-4" />
+          <h3 className="text-xl font-semibold mb-2">Bicicleta BMX</h3>
+          <button className="bg-red-500 text-white py-2 px-4 rounded-full">Buy</button>
+        </div>
       </div>
     </section>
   );

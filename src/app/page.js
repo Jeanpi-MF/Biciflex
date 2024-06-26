@@ -15,10 +15,12 @@ export default function Home() {
         />
         <div className="text-gray-500 max-w-md mx-auto mt-4 flex flex-col gap-4">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni minima odit recusandae. Illum ipsa non repudiandae? Eum ipsam iste quos suscipit tempora? Aperiam esse fugiat inventore laboriosam officiis quam rem!
+          Presentamos BiciFlex, tu nueva manera de movilizarte. BiciFlex es una aplicación innovadora que le brinda un fácil alcance a una bicicleta en cualquier lugar que lo necesite, cuenta con una amplia gama de opciones específicas de bicicletas para ejercicios, transporte y competencias entre muchas otras. 
+
+            BiciFlex tiene como objetivo ayudar a encontrar la bicicleta perfecta de manera fácil y segura, ya que la reserva se realiza directamente con el proveedor y la bicicleta se entrega a tiempo
+
           </p>
-          <p>At consectetur delectus ducimus est facere iure molestias obcaecati quaerat vitae voluptate? Aspernatur dolor explicabo iste minus molestiae pariatur provident quibusdam saepe?</p>
-          <p>Laborum molestias neque nulla obcaecati odio quia quod reprehenderit sit vitae voluptates? Eos, tenetur.</p>
+      
         </div>
       </section>
       <section className="text-center my-8" id="contact">
@@ -28,7 +30,7 @@ export default function Home() {
         />
         <div className="mt-8">
           <a className="text-4xl underline text-gray-500" href="tel:+46738123123">
-            +46 738 123 123
+            +51 987 654 321
           </a>
         </div>
       </section>
